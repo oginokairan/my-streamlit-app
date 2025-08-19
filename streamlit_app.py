@@ -26,13 +26,13 @@ st.write("---")
 st.write("# DEBUGGING")
 
 headers = getattr(st.context, "headers", None)
-print("Headers:", headers)
+st.write("Headers:", headers)
 
 host = _get_host_from_headers(headers)
-print("Host:", host)
+st.write("Host:", host)
 
 subdomain = _extract_subdomain(host)
-print("Subdomain:", subdomain)
+st.write("Subdomain:", subdomain)
 
 cookies = _get_cookies_from_headers(headers)
-print("Cookies:", cookies)
+st.write("Cookies:", cookies)
