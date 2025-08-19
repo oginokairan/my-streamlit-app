@@ -26,7 +26,7 @@ st.write("---")
 st.write("# DEBUGGING")
 
 headers = getattr(st.context, "headers", None)
-# print("Headers:", headers)
+print("Headers:", headers)
 
 host = _get_host_from_headers(headers)
 print("Host:", host)
